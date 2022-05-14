@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="place.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <ul>
+          <i class="fas fa-hamburger"></i>
+          <p>Menü Görmeden</p>
+        </ul>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <button class="raise" onclick="javascript:location.href='#login'">
+            Giriş
+          </button>
+          <button class="raise" onclick="javascript:location.href='#register'">
+            Kayıt
+          </button>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="title">
+        <h1>Erzurum Evleri</h1>
+        <br />
+        <div class="tag button" onclick="openMenuModal()">
+          <span>Menüyü</span>
+          <span>Görmek</span>
+          <span> için tıkla </span>
+          <br />
+          <button
+            style="background-image: url('imgs/erzurumevlerimenu.jpg')"
+          ></button>
+        </div>
+        <div class="point">
+          <div class="point-num">
+            <div class="author-name-prefix">5</div>
+          </div>
+          <span class="fas fa-star starred"></span>
+          <span class="fas fa-star starred"></span>
+          <span class="fas fa-star starred"></span>
+          <span class="fas fa-star starred"></span>
+          <span class="fas fa-star starred"></span>
+          <div class="comment-count">
+            <i class="fas fa-comment">341</i>
+          </div>
+        </div>
+        <div class="alt-title">
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Restoranlar - 99 içerisinde 3. - Erzurum </span>
+          </p>
+          <p>
+            <i class="fas fa-bowl-food"></i>
+            <span>Türk, Yerel </span>
+          </p>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <div class="galery-container">
+        <div class="galery">
+          <img
+            src="imgs/erzurumevleri.jpg"
+            style="width: 100%"
+            onclick="openModal();currentSlide(1)"
+            class="card cursor"
+          />
+
+          <img
+            src="imgs/erzurumevleri2.png"
+            style="width: 100%"
+            onclick="openModal();currentSlide(2)"
+            class="card cursor"
+          />
+
+          <img
+            src="imgs/erzurumevleri3.png"
+            style="width: 100%"
+            onclick="openModal();currentSlide(3)"
+            class="card cursor"
+          />
+
+          <img
+            src="imgs/erzurumevleri4.png"
+            style="width: 100%"
+            onclick="openModal();currentSlide(4)"
+            class="card cursor"
+          />
+        </div>
+        <button class="raise bg-black" onclick="openModal();">
+          <span>Tümünü görüntüle</span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <div class="comment-list">
+        <ul>
+          <div class="comment">
+            <div class="comment-header">
+              <img src="imgs/160.png" alt="" class="circle-avatar" />
+              <span class="author-name">Tahsin</span>
+            </div>
+
+            <div class="comment-body">
+              <div class="point">
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="comment-text">
+                <p>
+                  Mekan güzel. Eski erzurum mahalesindeki evleri birleştirip
+                  labirent şeklinde çok güzel bir ortam tek sıkıntı ve yıldız
+                  kesmem mutfak uzakta istedğiniz kahve veya çaylar gelene kadar
+                  eksı 7-8 derece olan havada soğuyoyor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment-header">
+              <img src="imgs/161.png" alt="" class="circle-avatar" />
+              <span class="author-name">Betül</span>
+            </div>
+
+            <div class="comment-body">
+              <div class="point">
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+              </div>
+              <div class="comment-text">
+                <p>
+                  Erzurum da gidilecek en doğru yerlerden biti bence. Canlı
+                  müzik patates ve meyve 40₺ gibi makul bir fiyata veriliyor.
+                  İçerideki eşyalar antika ve her odası farklı güzel. İster
+                  sandalyede, sedirde ister yerde minderlerde oturabiliyorsunuz.
+                  Çayı, közde patatesi ok beğendik. Tok olduğumuz için diğer
+                  seçenekleri deneyemedik.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment-header">
+              <img src="imgs/162.png" alt="" class="circle-avatar" />
+              <span class="author-name">Rahman</span>
+            </div>
+
+            <div class="comment-body">
+              <div class="point">
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star starred"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="comment-text">
+                <p>
+                  Tarihi Erzurum evleri görülmeye değer bir mekan. İçerisinde
+                  eski yıllara ait ev eşyaları, süs eşyaları, eski silahlar,
+                  yöresel kıyafetler, iletişim araçları bulunuyor. Bir de
+                  içerisinde restoran var. Şark köşesi usulü yemek hizmeti
+                  veriliyor. Girişte kişi başı 5 TL alıyorlar. Sadece gezmek
+                  isteyenler için.
+                </p>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <!-- title of the place = emirseyh -->
+      <div id="menuModal" class="modal">
+        <span class="close cursor" onclick="closeMenuModal()">&times;</span>
+        <div class="modal-content">
+          <img src="imgs/erzurumevlerimenu.jpg" style="width: 100%" />
+        </div>
+      </div>
+
+      <div id="mainModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="modalSlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="imgs/erzurumevleri.jpg" style="width: 100%" />
+          </div>
+
+          <div class="modalSlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="imgs/erzurumevleri2.png" style="width: 100%" />
+          </div>
+
+          <div class="modalSlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="imgs/erzurumevleri3.png" style="width: 100%" />
+          </div>
+
+          <div class="modalSlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="imgs/erzurumevleri4.png" style="width: 100%" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="column">
+            <img
+              class="card cursor"
+              src="imgs/erzurumevleri.jpg"
+              style="width: 100%"
+              onclick="currentSlide(1)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="card cursor"
+              src="imgs/erzurumevleri2.png"
+              style="width: 100%"
+              onclick="currentSlide(2)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="card cursor"
+              src="imgs/erzurumevleri3.png"
+              style="width: 100%"
+              onclick="currentSlide(3)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="card cursor"
+              src="imgs/erzurumevleri4.png"
+              style="width: 100%"
+              onclick="currentSlide(4)"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/place.js"></script>
+  </body>
+</html>

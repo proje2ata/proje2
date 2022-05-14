@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url(style.css);
+      @import url(login.css);
+      @import url(animete.css);
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button id="#back" class="back-to-top" onclick="scrollFunction()">
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <nav>
+      <ul>
+        <button class="raise" onclick="document.getElementById('id01').style.display='block'"">
+          Giriş
+        </button>
+        <button class="raise" onclick="document.getElementById('id02').style.display='block'"">
+          Kayıt
+        </button>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="logo">
+        <ul>
+          <i class="fas fa-hamburger"></i>
+          <p>Menü Görmeden</p>
+          <small class="logo-small">gitme</small>
+        </ul>
+      </div>
+      <div class="slogan">
+        <h1>
+          <span>En İyi</span>
+          <span>Ve</span>
+          <span>En Uygun</span>
+          <span>Mekanları Keşfet</span>
+        </h1>
+      </div>
+      <div class="search-wrapper">
+        <div class="search-box">
+          <input placeholder="Ara" tabindex="1" type="text" />
+          <div class="auto-search"></div>
+
+          <div class="search-icon"><i class="fas fa-search"></i></div>
+        </div>
+      </div>
+
+      <div class="card-list-header" onclick="scrollToCards()">
+        <h2>En Popüler Mekanlar</h2>
+        <i class="fas fa-solid fa-angles-down"></i>
+      </div>
+      <section class="card-list">
+        <article
+          class="card"
+          style="background-image: url(imgs/emirseyh.png)"
+          onclick="javascript:location.href='/emirseyh.html'"
+        >
+          <header class="card-header">
+            <h2>Emirşeyh Köftecisi</h2>
+          </header>
+
+          <div class="point">
+            <div class="point-num">
+              <div class="author-name-prefix">5</div>
+            </div>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star starred"></span>
+          </div>
+        </article>
+        <article
+          class="card"
+          style="background-image: url(imgs/guzelyurt.jpg)"
+          onclick="javascript:location.href='/guzelyurt.html'"
+        >
+          <header class="card-header">
+            <h2>Güzelyurt Restorant</h2>
+          </header>
+
+          <div class="point">
+            <div class="point-num">
+              <div class="author-name-prefix">3</div>
+            </div>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star"></span>
+            <span class="fas fa-star"></span>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          style="background-image: url(imgs/erzurumevleri.jpg)"
+          onclick="javascript:location.href='/erzurumevleri.html'"
+        >
+          <header class="card-header">
+            <h2>Erzurum Evleri</h2>
+          </header>
+
+          <div class="point">
+            <div class="point-num">
+              <div class="author-name-prefix">4</div>
+            </div>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star starred"></span>
+            <span class="fas fa-star"></span>
+          </div>
+        </article>
+      </section>
+      
+      <br />
+      <br />
+
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/">
+   
+
+    <div class="login-container">
+      <label for="uname"><b>Kullanıcı Adı</b></label>
+      <input type="text" placeholder="Kullanıcı adını gir" name="uname" required>
+
+      <label for="psw"><b>Şifre</b></label>
+      <input type="password" placeholder="Şifreni gir" name="psw" required>
+
+      <button type="submit">Giriş</button>
+     
+    </div>
+
+   
+  </form>
+</div>
+
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/">
+   
+
+    <div class="login-container">
+      <label for="uname"><b>Kullanıcı Adı</b></label>
+      <input type="text" placeholder="Kullanıcı adını gir" name="uname" required>
+
+      <label for="psw"><b>Şifre</b></label>
+      <input type="password" placeholder="Şifreni gir" name="psw" required>
+
+      <button type="submit">Kayıt</button>
+     
+    </div>
+
+   
+  </form>
+</div>
+
+
+    </main>
+
+    <script src="js/tahmin.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
