@@ -15,6 +15,21 @@ body {
   background-attachment: fixed;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #814681, rgb(92, 58, 84));
+}
+
+
+
+
 /* body::-webkit-scrollbar {
 } */
 
@@ -116,19 +131,9 @@ button {
 }
 
 .card-list::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.card-list::-webkit-scrollbar-thumb {
-  background: #6533db;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  display: none;
 }
 
-.card-list::-webkit-scrollbar-track {
-  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
-}
 
 .card {
   display: flex;
@@ -313,12 +318,20 @@ main {
   padding: 0.6rem 0.7rem;
   width: 100%;
   border-radius: 1px;
-  
   cursor: pointer;
   display: block;
 }
 
+.auto-search li:hover {
+  background: #eedee6;
 
+}
+
+.auto-search li i{
+  color: rgb(17, 3, 12);
+  padding-right: 0.3rem;
+  font-size: 1.5rem;
+}
 
 /*search kutusu son.*/
 

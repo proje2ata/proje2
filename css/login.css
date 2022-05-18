@@ -1,0 +1,39 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.close:focus,
+.close:hover {
+  color: #774f65;
+  cursor: pointer;
+}
+.login-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  border: 1px solid #888;
+  width: 80%;
+  display: block;
+}

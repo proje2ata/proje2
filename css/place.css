@@ -1,16 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&display=swap);
 * {
   box-sizing: border-box;
 }
-
 body {
-  background: linear-gradient(45deg, #ee5aee, rgb(255, 208, 245));
+  background: linear-gradient(45deg, #ee5aee, #ffd0f5);
   padding: 0 0;
-  font-family: "Itim", cursive;
+  font-family: Itim, cursive;
   background-attachment: fixed;
   font-size: 32px;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -20,58 +18,49 @@ nav {
   box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
 .logo {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000;
 }
-
 .logo ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgb(95, 31, 83);
+  color: #5f1f53;
 }
-
-.logo i {
-  color: rgb(126, 17, 86);
+.logo .icon-logo {
+  color: #7e1156;
   padding-right: 0.3rem;
   font-size: 4rem;
 }
-
 .logo p {
-  font-family: "Pacifico", cursive;
-  color: rgb(95, 31, 83);
-  font-weight: bold;
+  font-family: Pacifico, cursive;
+  color: #5f1f53;
+  font-weight: 700;
   font-size: 2.8rem;
   padding-right: 0.5rem;
 }
-
-/* button başlangıç */
-.raise:hover,
-.raise:focus {
+.raise:focus,
+.raise:hover {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
 }
-
 .raise {
   --color: #220c2a;
   --hover: #000000;
 }
-
 button {
   color: var(--color);
   transition: 0.25s;
 }
-button:hover,
-button:focus {
+button:focus,
+button:hover {
   border-color: var(--hover);
-  color: rgb(0, 0, 0);
+  color: #000;
 }
-
 button {
-  background: none;
+  background: 0 0;
   border: 5px solid;
   cursor: pointer;
   font: inherit;
@@ -79,23 +68,21 @@ button {
   margin: 0.3em;
   padding: 1em 2em;
 }
-
 main button {
   display: grid;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
   border-radius: 10px;
-  color: rgb(183, 68, 141);
-  background: linear-gradient(45deg, #ee5aee, rgb(255, 208, 245));
+  color: #b7448d;
+  background: linear-gradient(45deg, #ee5aee, #ffd0f5);
   border: 5px solid;
   cursor: pointer;
   font: inherit;
   line-height: 0.3rem;
 }
-
-main button:hover,
-main button:focus {
+main button:focus,
+main button:hover {
   border-color: #350d35;
   border: 5px solid;
   color: #431f38;
@@ -103,44 +90,28 @@ main button:focus {
 main button span {
   padding: 1rem;
 }
-
-/*navbar son*/
-
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0rem 0rem 0rem;
+  padding: 3rem 0 0 0;
 }
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .column {
   float: left;
   width: 25%;
 }
-
 .galery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   width: 700px;
-  background-color: rgb(34, 27, 33);
+  background-color: #221b21;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.1);
 }
-
 .card {
   display: flex;
   flex-direction: column;
@@ -149,26 +120,22 @@ main {
   background: #353535;
   font-size: 3rem;
   color: #fff;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
-    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  box-shadow: rgba(3, 8, 20, 0.1) 0 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0 0.075rem 0.175rem;
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  transition: all 500ms;
+  transition: all 0.5s;
   overflow: hidden;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .card:hover {
-  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
-    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  box-shadow: rgba(2, 8, 20, 0.1) 0 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0 0.175em 0.5em;
   transform: translateY(-3px) scale(1.1);
 }
-
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -179,11 +146,8 @@ main {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
-  opacity: 0.9;
+  background-color: #000;
 }
-
-/* Modal Content */
 .modal-content {
   position: relative;
   margin: auto;
@@ -191,58 +155,48 @@ main {
   width: 90%;
   max-width: 800px;
 }
-
-/* The Close Button */
 .close {
-  color: white;
+  color: #fff;
   position: absolute;
   top: 10px;
   right: 25px;
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 700;
 }
-
-.close:hover,
-.close:focus {
+.close:focus,
+.close:hover {
   color: #f2f2f2;
 }
-
 .modalSlides {
   display: none;
 }
-
 .cursor {
   cursor: pointer;
 }
-
-/* Next & previous buttons */
-.prev,
-.next {
+.next,
+.prev {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
-  font-weight: bold;
+  color: #fff;
+  font-weight: 700;
   font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
 }
-
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-.prev:hover,
-.next:hover {
+.next:hover,
+.prev:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .numbertext {
   color: #f2f2f2;
   font-size: 30px;
@@ -250,103 +204,80 @@ main {
   position: absolute;
   top: 0;
 }
-
 img {
   margin-bottom: -4px;
 }
-
 .galery-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0rem 0rem 0rem 0rem;
+  padding: 0;
 }
-
-.bone-container {
-  display: flex;
-  flex-direction: column;
-  background: #000;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
 hr {
   margin-bottom: 100px;
   width: 70%;
   height: 4px;
-  background: linear-gradient(to right, rgb(73, 46, 71), rgb(197, 28, 144));
-  border: none; /* reset default style */
+  background: linear-gradient(to right, #492e47, #c51c90);
+  border: none;
 }
-
 .title {
-  color: rgb(45, 10, 34);
+  color: #2d0a22;
   width: 60%;
   background-color: rgb(242 138 234);
   opacity: 0.8;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   font-size: 2rem;
   padding: 3rem;
   box-shadow: 10px 20px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
 .point {
   display: flex;
-  color: rgb(45, 10, 34);
+  color: #2d0a22;
 }
-
 .point-num {
   font-size: 3rem;
   font-weight: 900;
   padding-right: 0.3rem;
 }
-
 .starred {
   color: #ffe040;
 }
-
 .comment-count {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   padding-left: 0.5rem;
   padding-right: 1rem;
 }
-
 .comment-count i {
-  color: rgb(33, 13, 28);
+  color: #210d1c;
 }
-
 .tag {
   font-size: 1.5rem;
   font-weight: 300;
   float: right;
 }
 .tag i {
-  color: rgb(125, 31, 151);
+  color: #7d1f97;
 }
-
 .tag .button {
   cursor: pointer;
   padding-right: 2rem;
 }
-
 .tag button {
-  color: rgb(252, 240, 255);
+  color: #fcf0ff;
   width: 100px;
   height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   float: right;
 }
-
 .alt-title {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   float: left;
 }
-
 .comment-list {
   display: inline-table;
   flex-direction: column;
@@ -355,9 +286,8 @@ hr {
   padding: 1rem;
   margin: 0;
 }
-
 .comment {
-  background: rgb(255, 255, 255);
+  background: #fff;
   padding: 10px;
   border-radius: 15px;
   height: 200px;
@@ -367,59 +297,43 @@ hr {
   box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.1);
   margin-top: 3rem;
 }
-
 .comment:hover {
-  background: rgb(236, 223, 235);
+  background: #ecdfeb;
 }
-
 .comment-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-
 .author-name {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .circle-avatar {
   border: 1px solid #fff;
   border-radius: 50%;
   width: 100px;
   height: 100px;
 }
-
 .comment-text {
   font-size: 1.5rem;
   font-weight: 300;
   padding-left: 0.5rem;
 }
-
 .comment-body {
   margin: 0.1rem;
   display: table;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 }
-
-
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+.space-right {
+  margin: 0;
+  color: #000;
+  padding-right: 1rem;
+  font-size: 4rem;
 }
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
+.space-right:hover {
+  color: #dc63dc;
 }
-
-@keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
-

@@ -13,7 +13,8 @@ searchInput.onkeyup = (e) => {
       return tahmin.text.toLowerCase().includes(userEnteredText.toLowerCase());
     });
     emptyArray = emptyArray.map((data) => {
-      return `<li onclick="javascript:location.href='${data.url + ".html"}'">${data.text}</li>`;
+      return `<li onclick="javascript:location.href='${data.url + ".html"}'"> <i class="fas fa-location-pin"></i>
+      ${data.text}</li>`;
     });
     searchWrapper.classList.add("active");
   } else {
