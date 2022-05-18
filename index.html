@@ -13,7 +13,7 @@
   </head>
   <body>
 
-      <button id="#back" class="back-to-top" onclick="scrollFunction()">
+    <button id="#back" class="back-to-top" onclick="scrollFunction()">
       <i class="fas fa-angle-up"></i>
     </button>
     <nav>
@@ -129,19 +129,19 @@
   <span onclick="document.getElementById('id01').style.display='none'"
 class="close" title="Kapat">&times;</span>
 
-  <form class="modal-content" action="/">
+  <form class="modal-content">
    
 
     <div class="login-container">
       <label for="uname"><b>Kullanıcı Adı</b></label>
-      <input type="text" placeholder="Kullanıcı adını gir" name="uname" required>
+      <input type="text" placeholder="Kullanıcı adını gir" id="uname" required>
       <br>
 
       <label for="psw"><b>Şifre</b></label>
-      <input type="password" placeholder="Şifreni gir" name="psw" required>
+      <input type="password" placeholder="Şifreni gir" id="psw" required>
       <br>
 
-      <button type="submit">Giriş</button>
+      <button type="submit" onclick="login()">Giriş</button>
      
     </div>
 
@@ -157,12 +157,12 @@ class="close" title="Kapat"">&times;</span>
   <form class="modal-content animate" action="/">
     <div class="login-container">
       <label for="uname"><b>Kullanıcı Adı</b></label>
-      <input type="text" placeholder="Kullanıcı adını gir" name="uname" required>
+      <input type="text" placeholder="Kullanıcı adını gir" id="unamer" required>
       <br>
       <label for="psw"><b>Şifre</b></label>
-      <input type="password" placeholder="Şifreni gir" name="psw" required>
+      <input type="password" placeholder="Şifreni gir" id="pswr" required>
       <br>
-      <button type="submit">Kayıt</button>
+      <button type="submit" onclick="register()">Kayıt</button>
      
     </div>
 
@@ -175,5 +175,6 @@ class="close" title="Kapat"">&times;</span>
 
     <script src="js/tahmin.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
