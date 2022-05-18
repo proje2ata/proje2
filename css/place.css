@@ -286,6 +286,17 @@ hr {
   padding: 1rem;
   margin: 0;
 }
+.comment-list-header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  background: #faeaff;
+  border-radius: 15px;
+  box-shadow: 12px 10px 10px rgba(0, 0, 0, 0.1);
+}
 .comment {
   background: #fff;
   padding: 10px;
