@@ -40,7 +40,7 @@ function showTahminBox(list) {
   tahminBox.innerHTML = listData;
 }
 
-const backButton = document.getElementById("#back");
+const backButton = document.getElementById("back");
 
 function scrollToCards() {
   document.querySelector(".card-list").scrollIntoView({
