@@ -1,0 +1,30 @@
+.hakkimizda-box{
+    width: 70%;
+    height: auto;
+    background-color: rgb(251, 237, 247);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.hakkimizda-box h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hakkimizda-box p {
+    font-size: 1.2rem;
+    color: #000;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.hakkimizda-box li {
+    font-size: 1.3rem;
+    color: #000;
+    text-align: justify;
+    line-height: 2rem;
+}
