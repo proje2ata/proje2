@@ -27,11 +27,6 @@ body::-webkit-scrollbar-thumb {
   background: #c26ead;
 }
 
-
-
-/* body::-webkit-scrollbar {
-} */
-
 nav {
   position: relative;
   top: 0;

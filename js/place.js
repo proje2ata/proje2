@@ -1,17 +1,17 @@
-function openModal() {
+function modelAc() {
   document.getElementById("mainModal").style.display = "block";
 }
 
-function closeModal() {
+function modelKapa() {
   document.getElementById("mainModal").style.display = "none";
 }
 
-function closeMenuModal() {
+function menuModalKapa() {
   document.getElementById("menuModal").style.display = "none";
 }
 
 
-function openMenuModal(){
+function menuModalAc(){
   document.getElementById("menuModal").style.display = "block"
 }
 
@@ -24,23 +24,23 @@ document.onkeydown = function(evt) {
       isEscape = (evt.keyCode === 27);
   }
   if (isEscape) {
-      closeModal();
-      closeMenuModal();
+      modelKapa();
+      menuModalKapa();
   }
 }
 
 var slideIndex = 1;
-showSlides(slideIndex);
+indexGoster(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function indexArtir(n) {
+  indexGoster(slideIndex += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function indexBelirt(n) {
+  indexGoster(slideIndex = n);
 }
 
-function showSlides(n) {
+function indexGoster(n) {
   var i;
   var slides = document.getElementsByClassName("modalSlides");
   var dots = document.getElementsByClassName("demo");

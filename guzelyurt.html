@@ -3,6 +3,11 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Güzelyurt Restaurant</title>
     <style>
       @import url(css/fas.css);
       @import url(css/place.css);
@@ -27,7 +32,7 @@
         <h1>Güzelyurt Restaurant</h1>
 
         <br />
-        <div class="tag button" onclick="openMenuModal()">
+        <div class="tag button" onclick="menuModalAc()">
           <span>Menüyü</span>
           <span>Görmek</span>
           <span> için tıkla </span>
@@ -67,32 +72,32 @@
           <img
             src="imgs/guzelyurt.jpg"
             style="width: 100%"
-            onclick="openModal();currentSlide(1)"
+            onclick="modelAc();indexBelirt(1)"
             class="card cursor"
           />
 
           <img
             src="imgs/guzelyurt2.png"
             style="width: 100%"
-            onclick="openModal();currentSlide(2)"
+            onclick="modelAc();indexBelirt(2)"
             class="card cursor"
           />
 
           <img
             src="imgs/guzelyurt3.png"
             style="width: 100%"
-            onclick="openModal();currentSlide(3)"
+            onclick="modelAc();indexBelirt(3)"
             class="card cursor"
           />
 
           <img
             src="imgs/guzelyurt4.png"
             style="width: 100%"
-            onclick="openModal();currentSlide(4)"
+            onclick="modelAc();indexBelirt(4)"
             class="card cursor"
           />
         </div>
-        <button class="raise bg-black" onclick="openModal();">
+        <button class="raise bg-black" onclick="modelAc();">
           <span>Tümünü görüntüle</span>
         </button>
       </div>
@@ -183,14 +188,14 @@
       </div>
       <!-- title of the place = emirseyh -->
       <div id="menuModal" class="modal">
-        <span class="close cursor" onclick="closeMenuModal()">&times;</span>
+        <span class="close cursor" onclick="menuModalKapa()">&times;</span>
         <div class="modal-content">
           <img src="imgs/guzelyurtmenu.png" style="width: 100%" />
         </div>
       </div>
 
       <div id="mainModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <span class="close cursor" onclick="modelKapa()">&times;</span>
         <div class="modal-content">
           <div class="modalSlides">
             <div class="numbertext">1 / 4</div>
@@ -212,15 +217,15 @@
             <img src="imgs/guzelyurt4.png" style="width: 100%" />
           </div>
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="prev" onclick="indexArtir(-1)">&#10094;</a>
+          <a class="next" onclick="indexArtir(1)">&#10095;</a>
 
           <div class="column">
             <img
               class="card cursor"
               src="imgs/guzelyurt.jpg"
               style="width: 100%"
-              onclick="currentSlide(1)"
+              onclick="indexBelirt(1)"
             />
           </div>
           <div class="column">
@@ -228,7 +233,7 @@
               class="card cursor"
               src="imgs/guzelyurt2.png"
               style="width: 100%"
-              onclick="currentSlide(2)"
+              onclick="indexBelirt(2)"
             />
           </div>
           <div class="column">
@@ -236,7 +241,7 @@
               class="card cursor"
               src="imgs/guzelyurt3.png"
               style="width: 100%"
-              onclick="currentSlide(3)"
+              onclick="indexBelirt(3)"
             />
           </div>
           <div class="column">
@@ -244,15 +249,13 @@
               class="card cursor"
               src="imgs/guzelyurt4.png"
               style="width: 100%"
-              onclick="currentSlide(4)"
+              onclick="indexBelirt(4)"
             />
           </div>
         </div>
       </div>
     </main>
 
-
     <script src="js/place.js"></script>
-
   </body>
 </html>
