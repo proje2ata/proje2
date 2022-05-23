@@ -15,7 +15,9 @@ function login() {
 
   if (user) {
     alert("Giriş başarılı");
-    window.location = "index.html";
+    window.location.href = "userpage.html";
+    return false;
+    
   } else {
     alert("Kullanıcı adı veya şifre hatalı");
   }
