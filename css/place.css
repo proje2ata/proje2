@@ -9,6 +9,17 @@ body {
   background-attachment: fixed;
   font-size: 32px;
 }
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(45deg, #e4bbe4, rgb(216, 128, 196));
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #c26ead;
+}
 nav {
   display: flex;
   justify-content: space-between;
