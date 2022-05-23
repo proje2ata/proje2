@@ -15,6 +15,7 @@ function login() {
 
   if (user) {
     alert("Giriş başarılı");
+    document.cookie = "check=true";
     window.location.href = "userpage.html";
     return false;
     
