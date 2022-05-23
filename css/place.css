@@ -21,25 +21,42 @@ body::-webkit-scrollbar-thumb {
   background: #c26ead;
 }
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 20px;
   height: 100px;
   box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  align-items: center;
+  display: flex;
 }
+
+nav ul{
+  display: flex;
+  align-items: center;
+}
+
+.space-right {
+  margin: 0;
+  color: #000;
+  float: left;
+  padding-right: 1rem;
+  font-size: 4rem;
+  justify-self: start;
+}
+.space-right:hover {
+  color: #dc63dc;
+}
+
 .logo {
   font-size: 30px;
   font-weight: 700;
   color: #000;
-}
-.logo ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #5f1f53;
+  justify-self: center;
+  margin-left: 35%;
 }
+
 .logo .icon-logo {
   color: #7e1156;
   padding-right: 0.3rem;
@@ -349,13 +366,4 @@ hr {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-.space-right {
-  margin: 0;
-  color: #000;
-  padding-right: 1rem;
-  font-size: 4rem;
-}
-.space-right:hover {
-  color: #dc63dc;
 }

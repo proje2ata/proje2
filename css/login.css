@@ -1,4 +1,4 @@
-.modal {
+.modal-login {
   display: none;
   position: fixed;
   z-index: 1;
@@ -11,7 +11,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   padding-top: 60px;
 }
-.close {
+.close-login {
   position: absolute;
   right: 25px;
   top: 0;
@@ -19,8 +19,8 @@
   font-size: 3rem;
   font-weight: 700;
 }
-.close:focus,
-.close:hover {
+.close-login:focus,
+.close-login:hover {
   color: #774f65;
   cursor: pointer;
 }
@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
 }
-.modal-content {
+.modal-content-login {
   background-color: #fefefe;
   margin: 5px auto;
   border: 1px solid #888;
@@ -40,7 +40,7 @@
 }
 
 
-.modal-content input{
+.modal-content-login input{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
