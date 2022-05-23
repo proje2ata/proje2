@@ -6,7 +6,6 @@ function parcala(cookiename) {
 }
 
 function checkCookie() {
-  console.log("checkCookie");
   var check = parcala("check");
 
   if (check != "true") {
