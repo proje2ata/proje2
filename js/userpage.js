@@ -1,16 +1,15 @@
 function parcala(cookiename) {
-  var cookiestring = RegExp(cookiename + "=[^;]+").exec(document.cookie);
-  return decodeURIComponent(
-    !!cookiestring ? cookiestring.toString().replace(/^[^=]+./, "") : ""
-  );
+    var cookiestring = RegExp(cookiename + "=[^;]+").exec(document.cookie);
+    return decodeURIComponent(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./, "") : "");
 }
 
 function checkCookie() {
-  var check = parcala("check");
+    console.log("checkCookie");
+    var check = parcala("check");
 
-  if (check != "true") {
-    window.location.href = "index.html";
-  }
+    if (check != "true") {
+        window.location.href = "index.html";
+    }
 }
 
-window.onload =  checkCookie();
+window.onload = checkCookie();
